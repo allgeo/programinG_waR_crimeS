@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "910d84ac-36e6-499a-906f-17d028f38638",
+		"name": "Blog-apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create new posts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"caption\": \"#test, #test1\",\n    \"imageURL\": \"test1.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:8081/api/post",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "0.0.0.0:8081/api/post",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get current weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "0.0.0.0:8081/api/weather/current",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"weather",
+						"current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/Users/kasim/Downloads/402 (1).txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "0.0.0.0:8081/api/post/upload",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"post",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Open weather map API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?lat=40.71&lon=-74.00&appid=6516152d13d71b18b2a802116d1776b6&units=metric",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "40.71"
+						},
+						{
+							"key": "lon",
+							"value": "-74.00"
+						},
+						{
+							"key": "appid",
+							"value": "6516152d13d71b18b2a802116d1776b6"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
