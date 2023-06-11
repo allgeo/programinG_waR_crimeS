@@ -2,8 +2,7 @@
   <h3>🚧 Frontend still under construction... 🚧</h2>
 </div><br>
 
-
-# Blog APIs
+<img src="https://github.com/allgeo/programinG_waR_crimeS/assets/62227321/3f8a2819-e3ed-4382-b2b5-7fffafaeb825" width="200">
 
 ## APIs implemented
 
