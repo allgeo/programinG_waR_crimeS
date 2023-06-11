@@ -27,7 +27,7 @@ Mongo should be installed and up and running
 go mod download
 ```
 
-# Define your environment variables in .env file
+## Define your environment variables in .env file
 
 ```
 API_PORT=8081
@@ -41,18 +41,18 @@ AWS_ACCESS_KEY=
 AWS_SECRET_KEY=
 ```
 
-# Build go package
+## Build go package
 
 ```
 go build main.go
 ```
 
-# Run the service
+## Run the service
 
 ```
 go run main.go
 ```
 
-# Post collection
+## Post collection
 
 Import post collection from file `blog-apis.json`
