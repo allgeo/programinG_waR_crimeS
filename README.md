@@ -5,9 +5,9 @@
 ## APIs implemented
 
 <pre>
-1. POST API to upload a image
-2. POST API to create a post
-3. GET API to retreive all posts.
+1. POST API to upload a image to AWS S3
+2. POST API to create a posts
+3. GET API to retreive all posts
 </pre>
 
 ## Prerequisite
@@ -23,7 +23,7 @@ Mongo should be installed and up and running
 go mod download
 ```
 
-# Define your environment variables in .env file
+## Define your environment variables in .env file
 
 <pre>
 API_PORT=8081
@@ -35,18 +35,18 @@ AWS_ACCESS_KEY=
 AWS_SECRET_KEY=
 </pre>
 
-# Build go package
+## Build go package
 
 ```
 go build main.go
 ```
 
-# Run the service
+## Run the service
 
 ```
 go run main.go
 ```
 
-# Post collection
+## Post collection
 
 Import post collection from file `blog-apis.json`
