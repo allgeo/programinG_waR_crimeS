@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "75967090-4e32-4c24-a343-88c76c068617",
+		"name": "go-blog-apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22973644"
+	},
+	"item": [
+		{
+			"name": "Create new posts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"caption\": \"#test, #test1\",\n    \"imageURL\": \"test1.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:8081/api/post",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "0.0.0.0:8081/api/post",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload file to S3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/Users/kasim/Downloads/402 (1).txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "0.0.0.0:8081/api/post/upload",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"post",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
